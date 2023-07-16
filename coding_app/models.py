@@ -13,7 +13,7 @@ class User(AbstractUser):
 
 class Question(models.Model):
     text = models.TextField()
-
+    sphere_problem_id = models.BigIntegerField(null=True, blank=True)
     def __str__(self) -> str:
         return self.text
 
